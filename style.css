@@ -1,27 +1,32 @@
+*{
+  margin :0;
+  padding: 0%;
+}
 body {
   background-color: #f0f2f5;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  
-}
-
-.container {
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  padding: 20px;
+  
 }
 
+.div1{
+  margin: 30px;
+}
+
+hr {
+margin-bottom: 20px;
+
+}
 main {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
-  max-width: 100%;
-  padding: 20px 24px;
+  width: 450px;
+  padding: 24px;
   text-align: center;
 }
 
@@ -32,21 +37,20 @@ main h2 {
 
 main p {
   color: #606770;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
+  font-size: 16px;
+  
 
-.formulair {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
 }
 
 .sec1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
-  
+}
+
+#sec2{
+   flex-direction: column;
 }
 
 select {
@@ -55,14 +59,25 @@ select {
   border-radius: 6px;
   font-size: 15px;
   padding: 10px;
-  width: 30%;
-  margin-right: 8px;
+  width: 130px;
+
+}
+.select{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .div2{
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
+.p{
+  text-align: start;
+  margin: 10px 0 ;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -70,60 +85,77 @@ input[type="password"] {
   border: 1px solid #ccd0d5;
   border-radius: 6px;
   font-size: 15px;
-  width: 94%;
+  width: 422px;
   margin-bottom: 8px;
+}
+
+input:focus ,select:focus{
+ outline-color: black;
 }
 
 label {
   font-size: 14px;
-  margin-top: 5px;
-  margin-right: 10px;
   display: inline-block;
   border: 1px solid #ccd0d5;
   border-radius: 6px;
   font-size: 12px;
   padding: 10px;
-  width: 90px; 
+  width: 110px; 
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #1877f2;
+}
+
+a:hover{
+  text-decoration: underline;
+  
+}
+.en{
+  text-align: start;
+  line-height: 1.5;
 }
 
 
 .signup {
-  width: 90%;
+  width: 80%;
   background-color: #42b72a;
   color: white;
   font-weight: bold;
   font-size: 17px;
   border: none;
   border-radius: 6px;
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
-  margin-left: 17px;
+  padding: 12px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.signup:hover {
-  background-color: #36a420;
-}
-
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   main {
-    width: 100vw;
-    padding: 10px 2vw;
-    border-radius: 0;
+    width: 65vw;
   }
-  .sec1 {
+  .select{
     flex-direction: column;
     gap: 10px;
-  }
-  .div2 {
+} 
+  .sec1{
     flex-direction: column;
-    gap: 10px;
   }
-  select, input[type="text"], input[type="email"], input[type="password"] {
-    width: 80%;
+  .div2{
+   flex-direction: column;
+   gap: 5px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
   }
-  .signup {
-    width: 90%;
+  select{
+    width: 100%;
+    
   }
+  label{
+    width: 50%;
+  }
+  
 }

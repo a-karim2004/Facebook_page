@@ -9,23 +9,23 @@
 <body>
   <div class="container">           
     <main>
+       <form class="formulair">
      <div class="div1">
         <h2>Créer un nouveau compte</h2> 
        <p>C’est rapide et facile.</p>
      </div>
-    
-     <form class="formulair">
+    <hr> 
       <section class="sec1">
         <input type="text" placeholder="Prénom"/>
         <input type="text" placeholder="Nom de famille"/>
       </section>
+      <section class="sec1" id="sec2">
+          <input type="email" placeholder="Adresse e-mail"/>
+          <input type="password" placeholder="Nouveau mot de passe"/>
+      </section>
+       <p class="p">Date de naissance</p>
       
-       <input type="email" placeholder="Adresse e-mail"/>
-       <input type="password" placeholder="Nouveau mot de passe"/>
-      
-       <p>Date de naissance</p>
-      
-       <div class="div2">
+      <div class="select">
         <select name="jour" id="Jour">
           <option value="" disabled selected>Jour</option> 
           <option value="1">1</option>
@@ -83,19 +83,42 @@
               <option value="2024">2024</option>
               <option value="2023">2023</option>
               <option value="2022">2022</option>
-              <option value="2021">2020</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2011">2004</option>
+              <option value="2011">2003</option>
+              <option value="2011">2002</option>
+              <option value="2011">2001</option>
+              <option value="2011">2001</option>
               <option value="2000">2000</option>
               <option value="1999">1999</option>
               <option value="1998">1998</option>
               <option value="1997">1997</option>
             </select>
-            <p>Genre</p>
+          </div>
+            <p class="p">Genre</p>
+          <div class="div2">
             <label><input type="radio" name="gender" value="femme" /> Femme</label>
             <label><input type="radio" name="gender" value="homme" /> Homme</label>
             <label><input type="radio" name="gender" value="autre" /> Personalisé</label>
           </div>
 
-          <p>
+          <p class="en">
             En cliquant sur S’inscrire, vous acceptez nos <a href="#">Conditions</a>, notre <a href="#">Politique de confidentialité</a>, notre <a href="#">Politique d’utilisation des données</a> et notre <a href="#">Politique de cookies</a>. Tu recevras peut-être des notifications par SMS de notre part et tu pourras t'en désabonner à tout moment.
           </p>
 

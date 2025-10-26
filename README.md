@@ -33,7 +33,7 @@ les input pour les bouton les section est au niveau du css je eu l'opportunité 
 
 # ici voici un apperçu de la page
 
-![](./facebook.png)
+![](./f.png)
 ## Auteur
 
 Projet réalisé par [A-karim] dans le cadre de la formation Codeloccol.
